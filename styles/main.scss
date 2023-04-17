@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+$fs-base: 30px;
+
+$c-dark: #000000;
+
+$font-family-base: 'Cormorant', serif;
+
+$nav-link-font-weight: 600;
+$nav-link-font-size: $fs-base;
+$link-color: $c-dark;
+$navbar-nav-link-padding-x: 20px;
+
+$container-max-widths: (
+  xl: 1050px,
+);
+
+@import "~bootstrap/scss/bootstrap";
+
+.container{
+	&.small{max-width: 860px;}
+	&.large{max-width: 1150px;}
+}
