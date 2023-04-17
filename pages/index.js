@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Menu from '@/components/Menu'
 import Hero from '@/components/Hero'
+import Text from '@/components/Text'
+import Date from '@/components/Date'
 
 export default function Home({data}) {
   return (
@@ -10,6 +12,8 @@ export default function Home({data}) {
       </Head>
       <Menu />
       <Hero data={data.acf} />
+      <Text data={data.acf} />
+      <Date data={data.acf} />
     </>
   )
 }

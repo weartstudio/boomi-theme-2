@@ -4,7 +4,7 @@ import { Navbar, Nav, Container } from 'react-bootstrap'
 export default function Menu() {
 	return (
 		<Navbar variant="light" expand="lg" className='text-center'>
-			<Container className='justify-content-center'>
+			<Container className='justify-content-center fs-base fw-semibold'>
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
 					<Nav className="mx-auto">

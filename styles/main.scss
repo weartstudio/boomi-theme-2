@@ -1,23 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 $fs-base: 30px;
+$fs-large: 60px;
 
+$c-light: #757769;
 $c-dark: #000000;
 
 $font-family-base: 'Cormorant', serif;
 
-$nav-link-font-weight: 600;
-$nav-link-font-size: $fs-base;
-$link-color: $c-dark;
 $navbar-nav-link-padding-x: 20px;
 
 $container-max-widths: (
   xl: 1050px,
 );
 
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  6: $spacer * 4,
+  7: $spacer * 5,
+  8: $spacer * 6,
+  9: $spacer * 7,
+  10: $spacer * 8,
+);
+
 @import "~bootstrap/scss/bootstrap";
+
+.fs-base{ font-size: $fs-base; }
+.fs-large{ font-size: $fs-large; }
+.c-dark{ color: $c-dark }
+.c-light{ color: $c-light }
+
 
 .container{
 	&.small{max-width: 860px;}
 	&.large{max-width: 1150px;}
+}
+
+.hero{
+	.bg{
+		background: url('/flower.jpg') no-repeat center;
+		padding-top: 260px;
+		margin-top: -260px;
+	}
+}
+
+.date{
+	.bg{
+		background: url('/countdown.png') no-repeat center;
+		background-size: 125%;
+		padding-top: 100%;
+		position: relative;
+		span{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		};
+	}
 }
